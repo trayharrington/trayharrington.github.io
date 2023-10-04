@@ -1,5 +1,5 @@
-/*GLOBAL STYLES */
-html{
+/* GLOBAL STYLES */
+html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
 }
@@ -12,9 +12,6 @@ h1 {
 }
 a {
   color: #f00;
-}
-h2{
-  font-size: 30px;
 }
 h2 ~ p {
   font-size: 0.8em;
@@ -31,6 +28,24 @@ h2 ~ p {
   position: fixed;
   width: 100%;
   z-index: 20;
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  left: -30px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+.header-logo img {
+  width: 4.3vh;
 }
 .header-nav {
   float: right;
@@ -54,7 +69,7 @@ h2 ~ p {
   text-transform: uppercase;
 }
 .nav-links a:hover,
-.nav-links a:active {
+.nav-links a:active  {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a {
@@ -62,27 +77,6 @@ h2 ~ p {
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
-}
-/*.header-nav > li:last-child a {
-  color: #222;
-}*/
-.header-logo {
-  background-color: #000;
-  box-sizing: border-box;
-  display: block;
-  height: 10vh;
-  left: -30px;
-  padding: 10px;
-  position: relative;
-  text-align: center;
-  width: 10vh;
-}
-.header-logo img {
-  height: 80%;
-}
-.header-logo:hover,
-.header-logo:active {
-  background-color: #ed6e2f;
 }
 
 /* FOOTER STYLES */
@@ -115,11 +109,13 @@ h2 ~ p {
   background-color: #c7dbfc;
   height: 50vh;
 }
-.full-hero:hover {
-  background-color: #00f;
-}
 
 /* SOCIAL STYLES */
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 .social-link {
   background: rgba(150, 150, 150, 0.5);
   border-radius: 99px;
@@ -137,32 +133,25 @@ h2 ~ p {
   vertical-align: middle;
   width: 2.5em;
 }
-.social-link:hover {
-  background-color: #0f0;
-}
-.social-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
 }
+
 /* BIO STYLES */
-.bio-wrapper{
+.bio-wrapper {
   font-size: 24px;
-  margin: 0 auto 50px;
+  margin: auto;
   max-width: 960px;
   overflow: hidden;
 }
 .bio-box {
-  border: 1px dotted #000;
+  border: 1px solid black;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
   margin: 40px 1% 0;
-  padding: 0 2% 2%;
+  padding: 2%;
   width: 23%;
 }
 .bio-box h3 {
@@ -180,8 +169,7 @@ h2 ~ p {
 }
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
 }
 .bio-copy a {
-  color: #070;
+  color: green;
 }
