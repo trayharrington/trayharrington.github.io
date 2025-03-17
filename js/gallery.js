@@ -16,6 +16,14 @@ function activateGallery() {
 			let currentClass = "current";
 			document.querySelector(".current").classList.remove(currentClass);
 			thumbnail.parentNode.classList.add(currentClass);
+
+			// Update image info.
+			let galleryInfo = document.querySelector("#gallery-info");
+			let title       = galleryInfo.querySelector(".title");
+			let description       = galleryInfo.querySelector(".description");
+
+			title.innerHTML       = thumbnail.dataset.title;
+			description.innerHTML = thumbnail.dataset.description;
 		});
 	});
 }
